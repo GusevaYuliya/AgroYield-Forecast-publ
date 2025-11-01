@@ -6,7 +6,7 @@
 ```bash
 # Клонирование репозитория
 git clone https://github.com/your-username/AgroYield-Forecast-publ.git
-cd AgroYield-Forecast-publ'
+cd AgroYield-Forecast-publ
 
 # Прямой запуск
 cd backend
