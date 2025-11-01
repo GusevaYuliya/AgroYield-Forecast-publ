@@ -11,6 +11,8 @@ cd AgroYield-Forecast-publ
 # Прямой запуск
 cd backend
 pip install -r requirements.txt
+python3 api.py &
+
 cd ..
 npm install
 npm run dev
