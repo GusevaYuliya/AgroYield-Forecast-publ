@@ -1,0 +1,153 @@
+/* Вторая страница - Прогноз урожайности */
+.second-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.crops-panel {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.crops-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.crops-grid .crop-button {
+  flex: 0 0 calc(20% - 1rem);
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.page-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Адаптивность для второй страницы */
+@media (max-width: 1024px) {
+  .crops-grid .crop-button {
+    flex: 0 1 calc(33.333% - 1rem);
+    min-width: 140px;
+  }
+  
+  .crops-panel {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .second-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-description {
+    font-size: 1rem;
+  }
+
+  .crops-panel {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+
+  .crops-grid .crop-button {
+    flex: 0 1 calc(50% - 1rem);
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .crops-grid .crop-button {
+    flex: 0 1 100%;
+    min-width: auto;
+    max-width: 300px;
+  }
+  
+  .page-title {
+    font-size: 1.75rem;
+  }
+  
+  .crops-panel {
+    padding: 1rem;
+    max-width: 100%;
+  }
+}

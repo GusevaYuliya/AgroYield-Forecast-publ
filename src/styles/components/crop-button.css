@@ -1,0 +1,57 @@
+/* Стили для кнопок культур */
+.crop-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 100px;
+}
+
+.crop-button:hover {
+  border-color: var(--crop-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.crop-button.active {
+  border-color: var(--crop-color);
+  background: linear-gradient(135deg, var(--crop-color)20, var(--crop-color)10);
+  box-shadow: 0 4px 15px var(--crop-color)40;
+}
+
+.crop-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.crop-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.crop-button.active .crop-name {
+  color: var(--crop-color);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .crop-button {
+    min-height: 80px;
+    padding: 0.75rem;
+  }
+  
+  .crop-icon {
+    font-size: 2rem;
+  }
+  
+  .crop-name {
+    font-size: 0.9rem;
+  }
+}

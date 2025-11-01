@@ -1,0 +1,13 @@
+/* Главный файл стилей - импортирует все остальные */
+
+/* Базовые стили */
+@import './base/global.css';
+
+/* Стили макетов */
+@import './layouts/app.css';
+
+/* Стили компонентов */
+@import './components/home.css';
+@import './components/second-page.css';
+@import './components/crop-button.css';
+@import './components/crop-details.css';

@@ -1,0 +1,38 @@
+/* Стили для корневого компонента App */
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Навигация */
+.navigation {
+  padding: 1rem 2rem;
+  background: #2E7D32;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Основное содержимое */
+.main-content {
+  flex: 1;
+}
+
+/* Футер */
+.app-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #1B5E20;
+  color: white;
+  font-size: 0.9rem;
+}
