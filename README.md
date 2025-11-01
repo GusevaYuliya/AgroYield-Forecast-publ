@@ -5,7 +5,7 @@
 ## 🛠 Установка и запуск
 ```bash
 # Клонирование репозитория
-git clone https://github.com/your-username/AgroYield-Forecast-publ.git
+git clone https://github.com/GusevaYuliya/AgroYield-Forecast-publ
 cd AgroYield-Forecast-publ
 
 # Прямой запуск
