@@ -388,7 +388,7 @@ def catboost_predict(model, region, soil_type, crop, rainfall, temperature, fert
 
     prediction = model.predict(test_pool)[0]
     logger.info(f"🎯 CatBoost prediction result: {prediction:.2f}")
-    return prediction
+    return prediction*10
 
 @app.post("/api/refined-prediction")
 async def get_refined_prediction(request: RefinedPredictionRequest):
@@ -469,4 +469,5 @@ async def get_refined_yield(request: RefinedPredictionRequest):
 if __name__ == "__main__":
     import uvicorn
     logger.info("🚀 Starting FastAPI server...")
+
     uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
